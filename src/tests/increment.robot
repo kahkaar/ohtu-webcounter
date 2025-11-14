@@ -13,7 +13,7 @@ At start the counter is zero
 
 When button pressed twice the counter is two
     Go To  ${HOME_URL}
-    Input Text  name=new_value  10
+    Input Text  name=new_value  0
     Click Button  Aseta
     Click Button  Paina
     Click Button  Paina
@@ -21,7 +21,7 @@ When button pressed twice the counter is two
 
 When counter has a nonzero value and it is reset the value becomes zero
     Go To  ${HOME_URL}
-    Input Text  name=new_value  10
+    Input Text  name=new_value  0
     Click Button  Aseta
     Click Button  Nollaa
     Page Should Contain  nappia painettu 0 kertaa
